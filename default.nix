@@ -15,6 +15,7 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   drinklist-cli = pkgs.callPackage ./pkgs/drinklist-cli { };
+  frams-shell-tools = pkgs.callPackage ./pkgs/frams-shell-tools { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
