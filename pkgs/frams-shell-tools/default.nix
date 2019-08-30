@@ -1,12 +1,13 @@
 { pkgs ? import <nixpkgs> {}
 , stdenv ? pkgs.stdenv
+, fetchurl ? pkgs.lib.fetchurl
 , ...
 }:
 stdenv.mkDerivation {
       name = "frams-shell-tools";
-      src = fetchTarball {
+      src = fetchurl {
           url = "https://fex.belwue.de/sw/share/fstools-0.0.tar";
-          sha256 = "0sy2iiwmskmhmyv2ig0q2fnzbbpmzdqpd9g5s5pzxm25h1g6wprv";
+          sha256 = "11kacsxl6mf6qplxl8lrr47nv7wbq29w8124y8x40wszf2cjwa1l";
       };
       buildInputs = [pkgs.perl];
       dontBuild = true;
