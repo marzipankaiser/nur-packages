@@ -9,6 +9,7 @@ stdenv.mkDerivation {
           sha256 = "0sy2iiwmskmhmyv2ig0q2fnzbbpmzdqpd9g5s5pzxm25h1g6wprv";
       };
       buildInputs = [pkgs.perl];
+      dontBuild = true;
       installPhase = ''
         mkdir -p $out/bin
         cp -r bin $out/
