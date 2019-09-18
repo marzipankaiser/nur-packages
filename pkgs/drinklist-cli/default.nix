@@ -1,5 +1,5 @@
-{ stdenvNoCC
-, pkgs ? import <nixpkgs> {}
+{ pkgs ? import <nixpkgs> {}
+, stdenvNoCC ? pkgs.stdenvNoCC
 , ...
 }:
 with pkgs;
