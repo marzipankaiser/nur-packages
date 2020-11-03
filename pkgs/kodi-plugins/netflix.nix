@@ -18,5 +18,7 @@ kodiPlugins.mkKodiPlugin rec {
     description = "Inofficial Netflix plugin for Kodi";
   };
 
-  extraBuildInputs = [ pythonPackages.pycryptodomex ];
+  propagatedBuildInputs = [
+    pythonPackages.pycryptodomex
+  ];
 }
